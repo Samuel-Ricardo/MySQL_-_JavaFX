@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListarEmpresasController">
+   <children>
+      <TableView fx:id="tbEmpresas" layoutX="36.0" layoutY="14.0" prefHeight="281.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="clmID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="clmNome" prefWidth="152.0" text="Nome" />
+            <TableColumn fx:id="clmCNPJ" prefWidth="167.0" text="CNPJ" />
+        </columns>
+      </TableView>
+      <Button layoutX="36.0" layoutY="326.0" mnemonicParsing="false" onAction="#atualizarE" prefHeight="33.0" prefWidth="178.0" text="Atualizar">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="223.0" layoutY="326.0" mnemonicParsing="false" onAction="#deletarE" prefHeight="33.0" prefWidth="178.0" text="Deletar">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgEmpresa" fitHeight="150.0" fitWidth="200.0" layoutX="432.0" layoutY="14.0" pickOnBounds="true" />
+      <Button layoutX="443.0" layoutY="184.0" mnemonicParsing="false" onAction="#alterarE" prefHeight="33.0" prefWidth="178.0" text="Alterar">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="443.0" layoutY="240.0" mnemonicParsing="false" onAction="#gerarPDF" prefHeight="33.0" prefWidth="178.0" text="Gerar PDF">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

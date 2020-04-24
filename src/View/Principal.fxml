@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="215.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+   <children>
+      <Button layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#cadastraEmp" text="Cadastrar Empresa">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="173.0" mnemonicParsing="false" onAction="#listarEmp" text="Listar Empresas">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="228.0" mnemonicParsing="false" onAction="#listarP" text="Listar Pessoas">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="13.0" layoutY="60.0" mnemonicParsing="false" onAction="#cadastrarP" text="Cadastrar Pessoa">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

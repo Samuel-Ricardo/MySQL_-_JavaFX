@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AtualizarPessoaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="436.0" stroke="TRANSPARENT" strokeType="INSIDE" width="413.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.2" startX="0.7857142857142857" startY="1.0">
+               <stops>
+                  <Stop color="#00ff40" />
+                  <Stop color="#00fcff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="41.0" layoutY="197.0" text="Nome:">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="323.0" text="Senha:">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="257.0" text="Email:">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="41.0" layoutY="222.0" prefHeight="25.0" prefWidth="320.0" promptText="Digite seu nome..." />
+      <TextField fx:id="txtEmail" layoutX="41.0" layoutY="274.0" prefHeight="25.0" prefWidth="320.0" promptText="Digite seu Email..." />
+      <PasswordField fx:id="pasSenha" layoutX="41.0" layoutY="340.0" prefHeight="27.0" prefWidth="320.0" promptText="Digite sua Senha..." />
+      <Button fx:id="btCadastrar" layoutX="273.0" layoutY="340.0" mnemonicParsing="false" onAction="#atualizarP" prefHeight="25.0" prefWidth="88.0" text="atualizar">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCancelar" layoutX="11.0" layoutY="390.0" mnemonicParsing="false" onAction="#cancelarP" prefHeight="32.0" prefWidth="393.0" text="Cancelar">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgPessoa" fitHeight="150.0" fitWidth="147.0" layoutX="128.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@Imagens/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
